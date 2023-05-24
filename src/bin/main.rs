@@ -1,5 +1,11 @@
-use hoge_repl_rs::*;
+use hoge_repl_rs::repl::*;
 
 fn main() {
-    println!("Hello, world!");
+    const isLooped: bool = true;
+
+    while isLooped == true {
+        read();
+        eval();
+        print();
+    }
 }
