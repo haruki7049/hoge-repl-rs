@@ -1,9 +1,11 @@
-
+/// this module provides common tests.
 #[cfg(test)]
 mod tests{
-    use super::*;
+    use crate::repl;
 
+    /// read function test.
+    #[test]
     fn read_test(){
-        read();
+        repl::read();
     }
 }
